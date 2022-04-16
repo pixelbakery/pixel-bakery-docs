@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "hidden": false,
+    "theme": {
+      "sidebar": false
+    }
+  },
+
+  "video-production": {
+    "title": "Video Production"
+  },
+  "post-production": {
+    "title": "Post Production"
+  }
+}
