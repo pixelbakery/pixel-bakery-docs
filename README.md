@@ -2,6 +2,8 @@
 
 _Warning: this project is not production ready, API might change without notice._
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/338e3de0-72d6-40fc-b142-4da6b72c7a6c/deploy-status)](https://app.netlify.com/sites/pb-cookbook/deploys)
+
 [![](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&c=1)
 
 **Nextra** is a [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com) powered, no-code site generator.
