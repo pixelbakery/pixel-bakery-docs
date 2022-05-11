@@ -1,0 +1,132 @@
+@tailwind utilities;
+
+@layer utilities {
+  /* Gilroy */
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 300;
+    src: url(/fonts/Gilroy/gilroy-light.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 300;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-lightitalic.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 400;
+    src: url(/fonts/Gilroy/gilroy-regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 400;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-regularitalic.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url(/fonts/Gilroy/gilroy-medium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-mediumitalic.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url(/fonts/Gilroy/gilroy-bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-bolditalic.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url(/fonts/Gilroy/gilroy-extrabold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-extrabolditalic.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url(/fonts/Gilroy/gilroy-black.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-blackitalic.woff2) format('woff');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 900;
+    src: url(/fonts/Gilroy/gilroy-heavy.woff2) format('woff');
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-style: italic;
+    src: url(/fonts/Gilroy/gilroy-heavyitalic.woff2) format('woff');
+  }
+  p,
+  ul,
+  ol,
+  blockquote {
+    @apply my-6;
+  }
+  blockquote {
+    @apply border border-l-8 border-wine-100 px-8 lg:px-16 py-3 my-6 italic;
+  }
+  p {
+    @apply text-lg text-wine my-4 pb-3 max-w-lg;
+  }
+
+  p a {
+    @apply underline text-peach underline-offset-4 hover:opacity-75;
+  }
+  /* ul {
+    @apply my-6;
+  } */
+  /* li {
+    @apply text-lg text-wine my-3   list-inside list-disc;
+  } */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-pbheading font-extrabold lowercase;
+  }
+  h1 {
+    @apply text-8xl;
+  }
+  h2 {
+    @apply text-6xl font-extrabold  text-peach my-8;
+  }
+  p.lead {
+    @apply mt-2 text-2xl pb-6 leading-relaxed;
+  }
+  p.disclaimer {
+    @apply text-sm text-wine-300 leading-tight italic;
+  }
+  sub {
+    @apply leading-none text-wine my-0 py-0;
+  }
+  label {
+    @apply text-lg text-wine mt-4 mb-2  font-bold block;
+  }
+  label.required::after {
+    content: ' *';
+    @apply text-sm align-top inline text-peach;
+  }
+}
