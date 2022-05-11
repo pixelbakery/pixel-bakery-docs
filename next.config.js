@@ -7,7 +7,6 @@ const withNextra = require('nextra')({
   },
   unstable_flexsearch: true,
   unstable_staticImage: true,
-  unstable_stork: true,
 })
 
 module.exports = withNextra({

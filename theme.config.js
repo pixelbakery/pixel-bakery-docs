@@ -14,7 +14,6 @@ export default {
   // docsRepositoryBase: 'https://github.com/vercel/swr-site/blob/master/pages',
   titleSuffix: ' – PBDS',
   search: true,
-  unstable_stork: true,
   floatTOC: false,
   feedbackLink: () => {
     return 'Question? Give us feedback →'
