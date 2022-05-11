@@ -1,8 +1,13 @@
+const { remarkMdxFrontmatter } = require('remark-mdx-frontmatter')
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.js',
+  mdxOptions: {
+    remarkPlugins: [[remarkMdxFrontmatter]],
+  },
   unstable_flexsearch: true,
   unstable_staticImage: true,
+  unstable_stork: true,
 })
 
 module.exports = withNextra({

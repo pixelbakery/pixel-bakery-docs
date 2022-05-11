@@ -8,6 +8,10 @@ module.exports = {
     './pages/**/*.mdx',
   ],
   theme: {
+    fontFamily: {
+      pbheading: 'Gilroy, Poppins, sans-serif',
+      body: 'Poppins, sans-serif',
+    },
     colors: {
       transparent: 'transparent',
       cream: 'rgb(239, 232, 242)', //#EFE8F2},

@@ -10,11 +10,11 @@ const Vercel = ({ height = 20 }) => (
 )
 
 export default {
-  projectLink: 'https://github.com/vercel/swr',
-  docsRepositoryBase: 'https://github.com/vercel/swr-site/blob/master/pages',
+  projectLink: 'https://github.com/pixelbakery/pixel-bakery-docs',
+  // docsRepositoryBase: 'https://github.com/vercel/swr-site/blob/master/pages',
   titleSuffix: ' – PBDS',
   search: true,
-  unstable_flexsearch: true,
+  unstable_stork: true,
   floatTOC: false,
   feedbackLink: () => {
     return 'Question? Give us feedback →'
@@ -77,12 +77,12 @@ export default {
           }
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@vercel" />
+        <meta name="twitter:site" content="@pixelbakery" />
         <meta name="twitter:image" content={ogImage} />
         <meta
           name="og:title"
           content={
-            title ? title + ' – SWR' : 'SWR: React Hooks for Data Fetching'
+            title ? title + ' – PBDS' : 'SWR: React Hooks for Data Fetching'
           }
         />
         <meta name="og:image" content={ogImage} />
@@ -92,19 +92,19 @@ export default {
   },
   footerEditLink: 'Edit this page on GitHub →',
 
-  footerText: () => {
-    return (
-      <a
-        href="https://vercel.com/?utm_source=swr"
-        target="_blank"
-        rel="noopener"
-        className="inline-flex items-center no-underline text-current font-semibold"
-      >
-        <span className="mr-1">Powered by</span>
-        <span>
-          <Vercel />
-        </span>
-      </a>
-    )
-  },
+  // footerText: () => {
+  //   return (
+  //     <a
+  //       href="https://vercel.com/?utm_source=swr"
+  //       target="_blank"
+  //       rel="noopener"
+  //       className="inline-flex items-center no-underline text-current font-semibold"
+  //     >
+  //       <span className="mr-1">Powered by</span>
+  //       <span>
+  //         <Vercel />
+  //       </span>
+  //     </a>
+  //   )
+  // },
 }
