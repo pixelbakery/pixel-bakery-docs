@@ -1,0 +1,132 @@
+---
+title: 'How To Connect to the PB Server'
+---
+
+# How To: Connect to the PB Server
+
+Hello, welcome to my crib. Today I'll be showing you how to connect a mac to Pixel Bakery's Dry Storage server. This guide is only for macs. If you're on a PC, good fucking luck.
+
+WHAT'S WHAT AND WHERE
+---------------------
+
+Pixel Bakery has two servers that total around 120 terabytes. One is colloquially called 'Dry Storage' and the other 'Hot Storage'. They store the same types of content but serve for separate functions. Hot Storage is for content that is active, relevant, or created within the past year. Dry Storage is archival.
+
+The following types of content are stored on the servers:
+
+- Client working files & deliverables
+
+- Client assets such as logos, ai files, etc
+
+- Assets for PB's internal brand
+
+- Content & working files produced for PB such as tutorials
+
+- TimeMachine backups. Employees are welcome to set the server as their time machine destination 
+
+- Personal Files. Employees are welcome to reserve up to 5TB for personal storage space.
+
+Other documents such as invoices, contracts, brand exploration surveys, spreadsheets, etc. should be stored on Google Drive.
+
+NOTE: Your password MAY be different on both servers.
+
+REMOTE CONNECTION (Off Site)
+----------------------------
+
+NOTE: If items are uploading/downloaded slowly, you can visit https:// pixelbakery.synology.me:4001/ for Dry Storage and https:// pixelbakery2.synology.me:5005/ for Hot Storage from your browser, log in, and use the File Manager app.
+
+### Step 1
+
+Open up Terminal by hitting ⌘ Space on the keyboard (opens Spotlight) and searching for 'Terminal'
+
+### Step 2
+
+Once inside the terminal, copy and paste these three commands and hit Return one at a time. The last command uses "Sudo", which is basically saying "I'm god you have to listen to what I say". Your computer will be like "But how do we know you're the true prodigal son and not full of shit?" You'll have to enter your computer password (not your server password) to prove your divinity.
+
+- defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+echo "[default]" | sudo tee -a /etc/nsmb.conf
+
+echo "dir_cache_off=yes" | sudo tee -a /etc/nsmb.conf
+
+sudo -s
+
+echo "[default]" >> /etc/nsmb.conf
+
+echo "signing_required=no" >> /etc/nsmb.conf
+
+exit
+
+### Step 3 
+
+Open Finder
+
+![Alt text](/img/connect-pb-server-step-1.png 'title')
+
+In the upper toolbar, select Go > Connect to Server. Or hit ⌘K.
+
+![Alt text](/img/connect-pb-server-step-2.png 'title')
+
+### Step 4
+
+Type
+
+https:// pixelbakery.synology.me:5016 for Cold Storage and 
+
+https:// pixelbakery2.synology.me:5069 for Hot Storage into the address bar
+
+![Alt text](/img/connect-pb-server-step-3.png 'title')
+
+### Step 5
+
+ Select Connect
+
+![Alt text](/img/connect-pb-server-step-4.png 'title')
+
+### Step 6
+
+Enter your username and password. Your username is Firstname Lastname with a space between them. Make sure "Remember this password in my keychain" is checked so you don't have to type your password out a thousand times.
+
+![Alt text](/img/connect-pb-server-step-5.png 'title')
+
+### Step 7
+
+A new folder should now appear in finder:
+
+![Alt text](/img/connect-pb-server-step-6.png 'title')
+
+### Step 8
+
+Work your way down the file tree until you get to Pixel Bakery Server. Press and hold on the folder icon at the top of the window until the icon becomes draggable. Drag it to your favorites list for quick access.
+
+![Alt text](/img/connect-pb-server-step-7.png 'title')
+
+![Alt text](/img/connect-pb-server-step-8.png 'title')
+
+![Alt text](/img/connect-pb-server-step-9.png 'title')
+
+### Step 9
+
+Under System Preferences, go to Users & Groups ( ⌘ Space, type Users, it'll pop up). Select your user from the list on the left, unlock the padlock, type in your password. Then, select the tab called "Login Items".  Hit the + symbol. Select the mounted server share under Locations and hit Add. Do this again for the folder you added to your favorites list. This will make sure it connects to the server every time the computer is restarted. Close the padlock and exit the system preferences.
+
+![Alt text](/img/connect-pb-server-step-10.png 'title')
+
+![Alt text](/img/connect-pb-server-step-11.png 'title')
+
+![Alt text](/img/connect-pb-server-step-12.png 'title')
+
+### Step 10
+
+There is no step 10.
+
+LOCAL CONNECTION (On Site)
+--------------------------
+
+To connect to the two servers locally, you'll follow the same steps as with remote connections except the addresses entered in Step 04 will be different. We'll connect using a filesharing protocol called SMB opposed to WebDav which is used for remote connections.
+
+Type
+
+smb://PB_Hot_Storage for Hot Storage and
+
+smb://PB_Dry_Storage for Dry Storage
+
+You may be prompted to 'Mount' certain drives when using SMB. You can control + click and drives you want to mount to your local file system.
