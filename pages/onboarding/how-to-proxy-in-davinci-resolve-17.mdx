@@ -1,0 +1,64 @@
+---
+title: 'How To Proxy in DaVinci Resolve 17'
+---
+
+# How To: Proxy in DaVinci Resolve 17
+
+
+First things first, make sure your folder structure is set from the beginning.
+
+1.  RAW footage (separate footage into subfolders if the project is large with multiple cams)
+
+2.  Proxies (if necessary)
+
+3.  Working files (only localized within the DaVinci file)
+
+4.  Timelines (only inside the DaVinci file)
+
+5.  Render Houses (only inside the DaVinci file)
+
+6.  Assets (Illustrator working files, AE files, AE renders, etc.)
+
+7.  VO (if necessary)
+
+8.  Music & SFX
+
+9.  Renders
+
+NOW we can jump into proxying
+
+-   Open DaVinci Resolve 17
+
+-   Open new project
+
+-   Drag and drop files that need to be proxied in the media pool (top left)
+
+![Alt text](/img/Proxy-Step-1.png)
+
+-   Select all the files then go to File > Media Management
+
+-   Choose Clips tab
+
+-   Choose Transcode tab beneath that
+
+-   Specify the path to your Proxy folder
+
+-   Choose "Transcode all media"
+
+-   To retain original folder structure:
+
+-   Expand "More options"
+
+![Alt text](/img/Proxy-Step-2.png)
+
+-   Choose Quicktime video format, H.264, NVIDIA encoder (if available), Medium quality, and -VERY IMPORTANT- deselect "Frame reordering" to experience a super-fast encode process.
+
+-   Choose custom resolution of 960x540 (choose a larger resolution if you need to)
+
+![Alt text](/img/Proxy-Step-3.png)
+
+-   The audio codec should remain Linear PCM
+
+-   Press start on the bottom right of the screen.
+
+![Alt text](/img/Proxy-Step-4.png)
