@@ -11,14 +11,12 @@ const Vercel = ({ height = 20 }) => (
 
 export default {
   projectLink: 'https://github.com/pixelbakery/pixel-bakery-docs',
-  // docsRepositoryBase: 'https://github.com/vercel/swr-site/blob/master/pages',
+  docsRepositoryBase: 'https://github.com/pixelbakery/pixel-bakery-docs',
   titleSuffix: ' – PBDS',
   search: true,
   floatTOC: false,
-  feedbackLink: () => {
-    return 'Question? Give us feedback →'
-  },
-  feedbackLabels: 'feedback',
+  defaultMenuCollapsed: true,
+
   logo: () => {
     return (
       <>
@@ -35,6 +33,8 @@ export default {
 
     return (
       <>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="AdsBot-Google" content="noindex, nofollow" />
         {/* Favicons, meta */}
         <link
           rel="apple-touch-icon"
@@ -64,46 +64,37 @@ export default {
         <meta
           name="description"
           content={
-            meta.description ||
-            'SWR is a React Hooks library for data fetching. SWR first returns the data from cache (stale), then sends the fetch request (revalidate), and finally comes with the up-to-date data again.'
+            meta.description || 'Pixel Bakery training and process documents.'
           }
         />
         <meta
           name="og:description"
           content={
-            meta.description ||
-            'SWR is a React Hooks library for data fetching. SWR first returns the data from cache (stale), then sends the fetch request (revalidate), and finally comes with the up-to-date data again.'
+            meta.description || 'Pixel Bakery training and process documents.'
           }
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@pixelbakery" />
         <meta name="twitter:image" content={ogImage} />
-        <meta
-          name="og:title"
-          content={
-            title ? title + ' – PBDS' : 'SWR: React Hooks for Data Fetching'
-          }
-        />
+        <meta name="og:title" content={title ? title + ' – PBDS' : ''} />
         <meta name="og:image" content={ogImage} />
         <meta name="apple-mobile-web-app-title" content="SWR" />
       </>
     )
   },
-  footerEditLink: 'Edit this page on GitHub →',
+  footerEditLink: '',
 
-  // footerText: () => {
-  //   return (
-  //     <a
-  //       href="https://vercel.com/?utm_source=swr"
-  //       target="_blank"
-  //       rel="noopener"
-  //       className="inline-flex items-center no-underline text-current font-semibold"
-  //     >
-  //       <span className="mr-1">Powered by</span>
-  //       <span>
-  //         <Vercel />
-  //       </span>
-  //     </a>
-  //   )
-  // },
+  footerText: () => {
+    return (
+      <a
+        href="https://vercel.com/?utm_source=swr"
+        target="_blank"
+        rel="noopener"
+        className="inline-flex items-center no-underline text-current font-semibold"
+      >
+        <span className="mr-1">Bake Long and Prosper 🖖</span>
+        <span></span>
+      </a>
+    )
+  },
 }

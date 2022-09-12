@@ -1,4 +1,13 @@
 {
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "hidden": false,
+    "theme": {
+      "sidebar": true
+    }
+  },
   "client-touchback-templates": "Client Touchback & Initial Contact Templates",
-  "rejection-email-templates": "Rejection Email Templates"
+  "rejection-email-templates": "Rejection Email Templates",
+  "honeybook-training": "Honeybook & Harvest Training"
 }

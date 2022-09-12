@@ -4,14 +4,11 @@
     "type": "page",
     "hidden": false,
     "theme": {
-      "sidebar": false
+      "sidebar": true
     }
   },
 
-  "video-production": {
-    "title": "Video Production"
-  },
-  "post-production": {
-    "title": "Post Production"
-  }
+  "video-production": "Video Production",
+  "human-resources": "Human Resources",
+  "account-services": "Account Services"
 }
