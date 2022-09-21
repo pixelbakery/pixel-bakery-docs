@@ -6,8 +6,7 @@ title: 'How To Connect to the PB Server'
 
 Hello, welcome to my crib. Today I'll be showing you how to connect a mac to Pixel Bakery's Dry Storage server. This guide is only for macs. If you're on a PC, good fucking luck.
 
-WHAT'S WHAT AND WHERE
----------------------
+## WHAT'S WHAT AND WHERE
 
 Pixel Bakery has two servers that total around 120 terabytes. One is colloquially called 'Dry Storage' and the other 'Hot Storage'. They store the same types of content but serve for separate functions. Hot Storage is for content that is active, relevant, or created within the past year. Dry Storage is archival.
 
@@ -21,7 +20,7 @@ The following types of content are stored on the servers:
 
 - Content & working files produced for PB such as tutorials
 
-- TimeMachine backups. Employees are welcome to set the server as their time machine destination 
+- TimeMachine backups. Employees are welcome to set the server as their time machine destination
 
 - Personal Files. Employees are welcome to reserve up to 5TB for personal storage space.
 
@@ -29,8 +28,7 @@ Other documents such as invoices, contracts, brand exploration surveys, spreadsh
 
 NOTE: Your password MAY be different on both servers.
 
-REMOTE CONNECTION (Off Site)
-----------------------------
+## REMOTE CONNECTION (Off Site)
 
 NOTE: If items are uploading/downloaded slowly, you can visit https:// pixelbakery.synology.me:4001/ for Dry Storage and https:// pixelbakery2.synology.me:5005/ for Hot Storage from your browser, log in, and use the File Manager app.
 
@@ -70,13 +68,13 @@ In the upper toolbar, select Go > Connect to Server. Or hit ⌘K.
 
 Type
 
-https:// pixelbakery.synology.me:5016 for Cold Storage and https:// pixelbakery2.synology.me:5069 for Hot Storage into the address bar
+https://208.82.104.184:5016 for Cold Storage and https://208.82.104.184:666 for Hot Storage into the address bar
 
 ![Alt text](/img/connect-pb-server-step-3.png 'title')
 
 ### Step 5
 
- Select Connect
+Select Connect
 
 ![Alt text](/img/connect-pb-server-step-4.png 'title')
 
@@ -116,8 +114,11 @@ Under System Preferences, go to Users & Groups ( ⌘ Space, type Users, it'll po
 
 There is no step 10.
 
-LOCAL CONNECTION (On Site)
---------------------------
+## LOCAL CONNECTION (On Site)
+
+By default, you should be able to access our servers by navigating to the Network tab in the sidebar of Finder.
+
+If not:
 
 To connect to the two servers locally, you'll follow the same steps as with remote connections except the addresses entered in Step 04 will be different. We'll connect using a filesharing protocol called SMB opposed to WebDav which is used for remote connections.
 

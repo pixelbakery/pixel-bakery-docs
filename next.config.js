@@ -1,3 +1,6 @@
+/**
+ * @type {import('next').NextConfig}
+ */
 const { remarkMdxFrontmatter } = require('remark-mdx-frontmatter')
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
