@@ -82,36 +82,51 @@
   p,
   ul,
   ol,
+  li,
   blockquote {
-    @apply my-6;
+    @apply prose prose-slate !important;
   }
   blockquote {
-    @apply border border-l-8 border-wine-100 px-8 lg:px-16 py-3 my-6 italic;
+    @apply border border-l-8 border-wine-100 px-8 lg:px-16 py-3 my-6 italic prose prose-slate;
   }
-  p {
-    @apply text-lg text-wine my-4 pb-3 max-w-xl;
+  p,
+  ul,
+  ol {
+    @apply text-lg text-black text-opacity-75 my-0 pt-1 pb-3 max-w-xl prose prose-slate !important;
+  }
+  code {
+    @apply px-4 prose prose-slate !important;
+  }
+  li {
+    @apply my-0 py-0 prose prose-slate text-lg pb-2 !important;
+  }
+  p a {
+    @apply underline text-peach underline-offset-4 hover:opacity-75 text-sm prose prose-slate;
+  }
+  ul li {
+    @apply list-none pb-1 mb-0 leading-none !important;
+  }
+  ul li p {
+    @apply list-none pb-1 mb-0  !important;
   }
 
-  p a {
-    @apply underline text-peach underline-offset-4 hover:opacity-75;
-  }
-  /* ul {
-    @apply my-6;
-  } */
-  /* li {
-    @apply text-lg text-wine my-3   list-inside list-disc;
-  } */
   h1,
   h2,
   h3,
   h4 {
-    @apply font-pbheading font-extrabold lowercase;
+    @apply font-pbheading  tracking-normal prose prose-slate !important;
   }
   h1 {
-    @apply text-8xl;
+    @apply text-2xl font-extrabold tracking-normal text-black dark:text-peach md:text-3xl prose prose-slate !important;
+  }
+  h1.dark {
+    @apply text-cream !important;
   }
   h2 {
-    @apply text-6xl font-extrabold  text-peach my-8;
+    @apply text-xl md:text-2xl text-black text-opacity-95 tracking-normal font-semibold flex whitespace-pre-wrap -ml-4 pl-4 border-0 mt-8 pb-0 mb-2 prose prose-slate !important;
+  }
+  h3 {
+    @apply text-2xl font-extrabold  text-black pt-10 prose prose-slate !important;
   }
   p.lead {
     @apply mt-2 text-2xl pb-6 leading-relaxed;
@@ -128,5 +143,23 @@
   label.required::after {
     content: ' *';
     @apply text-sm align-top inline text-peach;
+  }
+  .sidebar ul {
+    @apply list-none text-black py-0 !important;
+  }
+  .sidebar ul li {
+    @apply my-0 py-0 !important;
+  }
+  .sidebar ul li button {
+    @apply text-wine font-semibold text-base  !important;
+  }
+  .sidebar ul li ul {
+    @apply font-normal my-0 py-0 pl-0 list-none no-underline !important;
+  }
+  .sidebar ul li ul li {
+    @apply font-normal ml-2 my-0 py-0 pl-0 list-none no-underline !important;
+  }
+  .sidebar ul li ul li a {
+    @apply font-normal py-2 text-wine-500 my-0 no-underline !important;
   }
 }

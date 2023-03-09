@@ -85,16 +85,6 @@ export default {
   footerEditLink: '',
 
   footerText: () => {
-    return (
-      <a
-        href="https://vercel.com/?utm_source=swr"
-        target="_blank"
-        rel="noopener"
-        className="inline-flex items-center no-underline text-current font-semibold"
-      >
-        <span className="mr-1">Bake Long and Prosper 🖖</span>
-        <span></span>
-      </a>
-    )
+    return <span className="mr-1">Bake Long and Prosper 🖖</span>
   },
 }

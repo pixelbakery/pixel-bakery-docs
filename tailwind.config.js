@@ -40,6 +40,7 @@ module.exports = {
         500: 'rgb(104, 102, 111)',
         DEFAULT: 'rgb(80, 78, 87)', //#504E57
       },
+      black: 'rgb(41, 41, 41)',
     },
     extend: {
       scale: {
@@ -55,5 +56,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
