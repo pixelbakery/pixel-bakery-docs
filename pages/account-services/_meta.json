@@ -1,11 +1,6 @@
 {
   "index": {
-    "title": "Introduction",
-    "type": "page",
-    "hidden": false,
-    "theme": {
-      "sidebar": true
-    }
+    "title": "Introduction"
   },
   "client-touchback-templates": "Client Touchback & Initial Contact Templates",
   "sending-decks": "Sending Decks",

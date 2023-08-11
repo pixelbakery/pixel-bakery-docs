@@ -1,11 +1,6 @@
 {
   "index": {
-    "title": "Introduction",
-    "type": "page",
-    "hidden": false,
-    "theme": {
-      "sidebar": true
-    }
+    "title": "Introduction"
   },
   "video-production": "Video Production",
   "human-resources": "Human Resources",

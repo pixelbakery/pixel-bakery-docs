@@ -157,9 +157,9 @@
     @apply font-normal my-0 py-0 pl-0 list-none no-underline !important;
   }
   .sidebar ul li ul li {
-    @apply font-normal ml-2 my-0 py-0 pl-0 list-none no-underline !important;
+    @apply font-normal ml-2 my-0 py-0 pl-0 list-none no-underline  !important;
   }
   .sidebar ul li ul li a {
-    @apply font-normal py-2 text-wine-500 my-0 no-underline !important;
+    @apply font-normal py-2 text-wine-500 my-0 no-underline border-none !important;
   }
 }

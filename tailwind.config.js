@@ -3,7 +3,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './styles/globals.css',
-    './theme.config.js',
+    './theme.config.tsx',
     './pages/**/*.md',
     './pages/**/*.mdx',
   ],
